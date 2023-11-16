@@ -3,7 +3,7 @@ import { youHello } from "./script_1_bis.js";
 import { factorial } from "./script_2.js";
 import { pyramid } from "./script_3.js";
 import { business } from "./script_4.js";
-
+import { biblioNerd } from "./script_5.js";
 
 //récupère les fonctions depuis script_x.js
 
@@ -30,6 +30,10 @@ switch (scriptNumber) {
   case 4:
     console.log("Execution du script 4 : American Dream.");
     business();
+    break;
+  case 5:
+    console.log("Execution du script 5 : Biblio Loco.");
+    biblioNerd();
     break;
   default:
     console.log("Oh, oh, le script choisi n'existe pas !");

@@ -1,6 +1,6 @@
 const books = [
   { title: "Gatsby le magnifique", id: 133712, rented: 39 },
-  { title: "A la recherche du temps,perdu", id: 237634, rented: 28 },
+  { title: "A la recherche du temps perdu", id: 237634, rented: 28 },
   { title: "Orgueil & Préjugés", id: 873495, rented: 67 },
   { title: "Les frères Karamazov", id: 450911, rented: 55 },
   { title: "Dans les forêts de Sibérie", id: 8376365, rented: 15 },
@@ -34,16 +34,35 @@ export function biblioNerd() {
 
   console.log("Le livre le plus emprunté est :", mostRentedBook.title);
   console.log("Le livre le moins emprunté est :", leastRentedBook.title);
+
+  const thisBook = books.find(book => book.id === 873495);
+  console.log("Le livre avec l'ID 873495 est :", thisBook)
+
+  const censoredBookList = books.filter(book => book.id !== 133712);
+  console.log("Liste de livres après la censure de l'histoire de Gatsby :");
+  censoredBookList.forEach(book => {
+    console.log(`${book.title}`);
+  });
+
+  const sortedCensoredBooks = censoredBookList
+  .slice()
+  .sort((firstPick, nextPick) => firstPick.title.localeCompare(nextPick.title, 'fr'))
+  .map(book => `${book.title}`)
+  .join("\n");
+
+console.log("Liste de livres post-censure triée par ordre alphabétique :");
+console.log(sortedCensoredBooks);
 }
+
 
   /*.reduce : 
    scanne et vire un par un (jusqu'à n'avoir qu'une seule valeur qu'il gardera)
         selon un critère qui ici est 
         notre if/else : (prev.rented < current.rented)
-                             ↓
-    if prev.rented est inf/sup à current.rented
-    on garde prev 
-    else 
-    on garde current
-end
+        ↓                                          ↓
+        if prev.rented est inf/sup à current.rented
+        on garde prev 
+        else 
+        on garde current
+        end
 */

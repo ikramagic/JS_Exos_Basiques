@@ -1,17 +1,22 @@
-# JavaScript Basics - README
+<div align="center">
+      <h1> <img src="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png" width="80px"><br/>The Ji-hess Project</h1>
+     </div>
+     
+# JavaScript Basics
 
 Ce repository contient des exercices de base en Javascript, pour se familiariser avec ce nouveau langage.
 
 ## Scripts
 
-1. **script_1.js** - Affiche "Hello, World!" dans la console.
-2. **script_1_bis.js** - Demande à l'utilisateur son prénom et affiche un "Hello, World" personnalisé.
-3. **script_2.js** - Calcule la factorielle d'un nombre saisi par l'utilisateur.
-4. **script_3.js** - Construit une pyramide.
-5. **script_4.js** - Affiche des liste d'entrepreneurs américains triée de différentes manières.
-6. **script_5.js** - Vérifie sur une array de livres plusieurs scénarios.
-7. **script_6.js** - Effectue une traduction simple d'ARN en protéines.
-8. **script_7.js** - Répond à l'utilisateur en mode djeuns.
+1. **script_1.js** 
+Affiche "Hello, World!" dans la console.
+2. **script_1_bis.js** - Demande ton prénom et affiche un "Hello, World" personnalisé.
+3. **script_2.js** - Calcule la factorielle du nombre que tu lui donneras.
+4. **script_3.js** - Construira une supah doopah pyramide.
+5. **script_4.js** - Affichera des listes d'entrepreneurs américains triée de manière diverses et variées.
+6. **script_5.js** - Jouera avec une array de livres, en mode CDI discount.
+7. **script_6.js** - Effectuera une traduction d'ARN en protéines (m'en demandez pas plus, je ne saurais pas vous l'expliquer).
+8. **script_7.js** - Te répondra des trucs en mode "djeuns".
 
 ## Instructions pour l'exécution
 
@@ -21,8 +26,8 @@ Ce repository contient des exercices de base en Javascript, pour se familiariser
 
 ### La méthode bourrin :
 
-1. Clonez le repository sur votre machine.
-2. Ouvrez le fichier HTML dans votre navigateur ou exécutez les scripts JavaScript dans un environnement Node.js.
-3. Suivez les instructions spécifiques à chaque script affichées dans la console ou dans le prompt.
+1. Clone le repository sur votre machine.
+2. Ouvrez le fichier HTML dans votre navigateur.
+3. Lisez le menu, ouvrez la console, et faîtes vos jeux !
 
-N'oubliez pas de recharger la page pour tester différents scripts après en avoir exécuté un.
+🚨 Il est possible que vous ayez besoin de recharger manuellement la page pour tester différents scripts après en avoir exécuté un.

@@ -10,8 +10,7 @@ Ce repository contient des exercices de base en Javascript, pour se familiariser
 
 ## Scripts
 
-1. **script_1.js** 
-Affiche "Hello, World!" dans la console.
+1. **script_1.js** - Affiche "Hello, World!" dans la console.
 2. **script_1_bis.js** - Demande ton prénom et affiche un "Hello, World" personnalisé.
 3. **script_2.js** - Calcule la factorielle du nombre que tu lui donneras.
 4. **script_3.js** - Construira une supah doopah pyramide.

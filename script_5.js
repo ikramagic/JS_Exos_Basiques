@@ -17,15 +17,33 @@ export function biblioNerd() {
   const allRentedAtLeastOnce = books.every((book) => book.rented >= 1);
 
   if (allRentedAtLeastOnce) {
-    console.log("True: tous les livres ont été empruntés au moins une fois.");
+    console.log("Tous les livres ont été empruntés au moins une fois.");
   } else {
     console.log(
-      "False: il y a un ou plusieurs livres qui n'ont jamais été empruntés."
+      "Il y a un ou plusieurs livres qui n'ont jamais été empruntés."
     );
   }
 
-  const sortedBooks = books.slice().sort((firstPick, nextPick) => nextPick.rented - firstPick.rented);
-  //découpe et trie dans l'array du plus grand au plus petit
-  const mostRentedBook = sortedBooks[0];
-//récupère le premier élément qui sera donc le moins emprunté
+  const mostRentedBook = books.reduce((prev, current) =>
+    prev.rented > current.rented ? prev : current
+  );
+
+  const leastRentedBook = books.reduce((prev, current) =>
+    prev.rented < current.rented ? prev : current
+  );
+
+  console.log("Le livre le plus emprunté est :", mostRentedBook.title);
+  console.log("Le livre le moins emprunté est :", leastRentedBook.title);
 }
+
+  /*.reduce : 
+   scanne et vire un par un (jusqu'à n'avoir qu'une seule valeur qu'il gardera)
+        selon un critère qui ici est 
+        notre if/else : (prev.rented < current.rented)
+                             ↓
+    if prev.rented est inf/sup à current.rented
+    on garde prev 
+    else 
+    on garde current
+end
+*/

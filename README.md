@@ -33,5 +33,7 @@ Affiche "Hello, World!" dans la console.
 3. Lisez le menu, ouvrez la console, et faîtes vos jeux !
 
 <div align="center">
-      <h1><img src="https://i.redd.it/ejl7r7lnef661.jpg" width="300px"></h1>
+      <h1><img src="https://i.redd.it/ejl7r7lnef661.jpg" width="250px"></h1>
      </div>
+
+# That's all moussaillons!

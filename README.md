@@ -23,10 +23,7 @@ Ce repository contient des exercices de base en Javascript, pour se familiariser
 
 ### La méthode simple et efficace : 
 
-<div>
   <a href="https://ikramiste.github.io/JS_Exos_Basiques/" target="_blank">Clique clique clique, c'est magique.</a>
-    <img src="https://iili.io/Jn267G2.th.png" alt="Logo" width="10px" style="vertical-align: middle;">
-</div>
 
 ### La méthode traditionnelle :
 
@@ -35,5 +32,5 @@ Ce repository contient des exercices de base en Javascript, pour se familiariser
 3. Lisez le menu, ouvrez la console, et faîtes vos jeux !
 
 <div align="center">
-      <h1><img src="https://i.redd.it/ejl7r7lnef661.jpg" width="250px"><br/>Et voilà.</h1>
+      <h1><img src="https://i.redd.it/ejl7r7lnef661.jpg" width="250px"><br/>Je savais pas sur quelle note finir, donc voilà, pensée pour Ruby.</h1>
      </div>

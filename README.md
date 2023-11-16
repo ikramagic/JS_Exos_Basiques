@@ -24,8 +24,8 @@ Ce repository contient des exercices de base en Javascript, pour se familiariser
 ### La méthode simple et efficace : 
 
 <div>
-  <img src="https://iili.io/Jn267G2.th.png" alt="Logo" width="40px" style="vertical-align: middle;">
-  <a href="https://ikramiste.github.io/JS_Exos_Basiques/" target="_blank">Clique sur ce lien, c'est magique.</a>
+  <a href="https://ikramiste.github.io/JS_Exos_Basiques/" target="_blank">Clique clique clique, c'est magique.</a>
+    <img src="https://iili.io/Jn267G2.th.png" alt="Logo" width="40px" style="vertical-align: middle;">
 </div>
 
 ### La méthode traditionnelle :

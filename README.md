@@ -23,11 +23,12 @@ Ce repository contient des exercices de base en Javascript, pour se familiariser
 
 ### La méthode simple et efficace : 
 
-https://ikramiste.github.io/JS_Exos_Basiques/ 
+<div>
+  <img src="https://iili.io/Jn267G2.th.png" alt="Logo" width="40px" style="vertical-align: middle;">
+  <a href="https://ikramiste.github.io/JS_Exos_Basiques/" target="_blank">Clique sur ce lien, c'est magique.</a>
+</div>
 
-Clique sur ce lien et teste tout ça en liiiiiive. <img src="https://iili.io/Jn267G2.th.png" width="40px">
-
-### La méthode bourrin :
+### La méthode traditionnelle :
 
 1. Clonez le repository sur votre ordinateur.
 2. Ouvrez le fichier HTML dans votre navigateur.

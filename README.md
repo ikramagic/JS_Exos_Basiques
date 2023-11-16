@@ -6,6 +6,8 @@
 
 Ce repository contient des exercices de base en Javascript, pour se familiariser avec ce nouveau langage.
 
+🚨 Il est possible que vous ayez besoin de recharger manuellement la page pour tester différents scripts après en avoir exécuté un.
+
 ## Scripts
 
 1. **script_1.js** 
@@ -26,8 +28,10 @@ Affiche "Hello, World!" dans la console.
 
 ### La méthode bourrin :
 
-1. Clone le repository sur votre machine.
+1. Clonez le repository sur votre ordinateur.
 2. Ouvrez le fichier HTML dans votre navigateur.
 3. Lisez le menu, ouvrez la console, et faîtes vos jeux !
 
-🚨 Il est possible que vous ayez besoin de recharger manuellement la page pour tester différents scripts après en avoir exécuté un.
+<div align="center">
+      <h1><img src="https://i.redd.it/ejl7r7lnef661.jpg" width="100px"></h1>
+     </div>

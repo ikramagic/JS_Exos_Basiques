@@ -15,7 +15,7 @@ export function adn() {
     } else if (["UAU", "UAC"].includes(codon)) {
       return "Tyrosine";
     } else {
-      return "Codon inconnu";
+      return "Le codon n'est pas reconnu.";
     }
   });
 

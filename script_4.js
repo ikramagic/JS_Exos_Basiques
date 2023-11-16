@@ -24,8 +24,11 @@ export function business() {
     .filter(
       (entrepreneur) => entrepreneur.year >= 1970 && entrepreneur.year < 1980
     )
+    //on récupère seuleument les entrepreneurs ayant une année de naissance entre 1970 inclus et 1980 exclu
     .map(({ first, last, year }) => `${first} ${last}, en ${year}`)
+    //remets tout ça dans un tableau qui affichera `xxx`
     .join("\n");
+    //joint les éléments par un retour à la ligne pour affichage propre
 
   console.log(
     "1. Voici les entrepreneurs qui ont vu le jour dans les années 70 :"
@@ -35,41 +38,38 @@ export function business() {
   const namesOfHippies = entrepreneurs.map(
     ({ first, last }) => `${first} ${last}`
   );
+  //on scanne et récupère uniquement first+last, dans l'array on voudra qu'un élément soit `xxx`
   console.log(
     "2. Voici une array contenant le prénom et le nom des entrepreneurs :"
   );
   console.log(namesOfHippies);
 
   const agesOfHippies = entrepreneurs.map(({ first, last, year }) => {
+    //on récupère le first, last et le year
     const age = 2023 - year;
+    //on utilise une fonction anonyme (age) pour l'utiliser comme résultat du calcul
     return `${first} ${last} aurait aujourd'hui ${age} ans.`
+    //self-explanatory, on renvoie ça pour chacun des entrepreneurs
   });
 
   console.log("3. Voici l'âge qu'auraient ces personnalités aujourd'hui :");
   for (const ageString of agesOfHippies) {
+    //ageString est simplement une variable qui prend la valeur de chaque élément de la liste agesOfHippies 
+    //ageString représente la phrase définie plus tôt pour donner l'âge
     console.log(ageString);
+    //demande affichage qui sera donc ligne par ligne
   }
 
   const orderInHippies = entrepreneurs
-    .slice()
-    .sort((firstPick, nextPick) => firstPick.last.localeCompare(nextPick.last, 'en'));
+    .slice() 
+    //copie le tableau pour qu'on se mette à table (copie indépendante de l'original)
+    .sort((firstPick, nextPick) => firstPick.last.localeCompare(nextPick.last, 'en'))
+    //récupère un élément firstPick et lastPick, compare last du first au last du next selon l'ordre alphabetique anglais (en), réorganise le tableau en fonction de l'ordre
+    .map(({ first, last }) => `${last.toUpperCase()} ${first}`)
+    //on crée encore un tableau une fois le tri effectué, on récupère first et last, on met last en majuscule
+    .join("\n");
+    //on lie tout ça avec un saut à la ligne
 
   console.log("Voici la liste des entrepreneurs par ordre alphabétique (nom de famille) :");
   console.log(orderInHippies);
 }
-
-/*
-
-fonction localeCompare() est utilisée pour comparer les noms de famille (last) des objets a et b. 
-En fonction du résultat de cette comparaison, la méthode sort() réorganisera les objets dans le tableau.
-
-
-
-
-
-
-  console.log("Voici les entrepreneurs nés dans les années 70 :")
-  console.log("Voici une array contenant le prénom et le nom des entrepreneurs :")
-  console.log("Voici l'âge qu'auraient ces personnalités aujourd'hui :")
-  console.log("Voici la liste des entrepreneurs filtrés par ordre alphabétique :")
-  */

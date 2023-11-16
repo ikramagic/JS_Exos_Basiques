@@ -5,12 +5,13 @@ import { pyramid } from "./script_3.js";
 import { business } from "./script_4.js";
 import { biblioNerd } from "./script_5.js";
 import { adn } from "./script_6.js";
+import { teenageBot } from "./script_7.js";
 
 //récupère les fonctions depuis script_x.js
 
-const userInput = prompt("Choisis le numéro du script que tu veux tester :"); //comme gets.chomp en Ruby
+const userInput = prompt("Choisis le numéro du script que tu veux tester :");
 
-const scriptNumber = parseInt(userInput); // comme to_i en Ruby
+const scriptNumber = parseInt(userInput);
 
 switch (scriptNumber) {
   case 1:
@@ -39,6 +40,10 @@ switch (scriptNumber) {
   case 6:
     console.log("Execution du script 6 : ADN de pangolin.");
     adn();
+    break;
+  case 7:
+    console.log("Execution du script 7 : AdoBot After Espress.");
+    teenageBot();
     break;
   default:
     console.log("Oh, oh, le script choisi n'existe pas !");

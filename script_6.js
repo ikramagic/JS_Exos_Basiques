@@ -19,5 +19,9 @@ export function adn() {
     }
   });
 
-  console.log(`L'ARN ${arn} matche avec la ou les protéines suivante(s) : ${proteins.join("-")}`);
+  console.log(
+    `L'ARN ${arn} matche avec la ou les protéines suivante(s) : ${proteins.join(
+      "-"
+    )}`
+  );
 }
